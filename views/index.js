@@ -230,7 +230,6 @@ const displayError = (error) => {
     }, 2000)
 }
 
-
 const onLogin = async () => {
   const username = document.getElementById("usernameL").value
   const password = document.getElementById("passwordL").value
