@@ -8,8 +8,8 @@
     "test": "jest"
   },
   "jest": {
-  	"testEnvironment": "node"
-	},
+    "testEnvironment": "node"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
