@@ -3,4 +3,6 @@
 Start app:
 
 npm i
+
+
 npm run start
