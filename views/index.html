@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Game Exercise</title>
+  </head>
+  <body>
+    <div id="login" style = "position:absolute; left:1100px; top:20px;">
+      username: <input type="text" name="usernameL" id = "usernameL"><br>
+      password: <input type="text" name="passwordL" id = "passwordL"><br>
+      <button onclick="onLogin()" >Login</button><br>
+      New User ? <button onclick="newUserButton()" id="newSignup">Signup</button>
+    </div>
+    <div id="signup" style = "position:absolute; left:1100px; top:10px; display: none">
+      username: <input type="text" name="username" id="usernameS"><br>
+      password: <input type="text" name="password" id="passwordS"><br>
+      re-enter password: <input type="text" name="password2" id="passwordS2"><br>
+      <button onclick="onSignup()">Signup</button>
+    </div>
+    <div id="logout" style = "position:absolute; left:1300px; top:10px">
+      <button onclick="onLogout()">Logout</button>
+    </div>
+    <div style = "position:absolute; left:500px; top:20px">
+      <h4 id = "player-greet" style="color:green"></h4>
+      <h4 id = "player-score" style="color:green" ></h4>
+    </div>
+    <p id = "error" style = "position:absolute; left:500px; top:120px; color:red"></p>
+    <div>
+        <p>Click the buttons to move the red square:</p>
+      <div id="myfilter"
+        style="position:absolute;background-color:#000000;opacity:0.3;width:322px;height:182px;display:none"></div>
+      <div id="myrestartbutton" style="position:absolute;padding-top:75px;padding-left:120px;display:none;"><button
+          onclick="restartGame()">Restart</button></div>
+      <div id="canvascontainer"></div>
+      <br>
+      <div style="text-align:center;width:320px;">
+        <button ontouchstart="moveup()" onmousedown="moveup()" onmouseup="clearmove()">UP</button><br><br>
+        <button ontouchstart="moveleft()" onmousedown="moveleft()" onmouseup="clearmove()">LEFT</button>
+        <button ontouchstart="moveright()" onmousedown="moveright()" onmouseup="clearmove()">RIGHT</button><br><br>
+        <button ontouchstart="movedown()" onmousedown="movedown()" onmouseup="clearmove()">DOWN</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
