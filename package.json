@@ -5,12 +5,16 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
+  "jest": {
+  	"testEnvironment": "node"
+	},
   "author": "",
   "license": "ISC",
   "dependencies": {
     "crypto": "^1.0.1",
+    "jest": "^24.1.0",
     "koa": "^2.7.0",
     "koa-bodyparser": "^4.2.1",
     "koa-ejs": "^4.2.0",
