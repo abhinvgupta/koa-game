@@ -24,7 +24,7 @@ const authOnStart = () => {
   if (loggedUserName) {
     document.getElementById("login").style.display = "none"
     document.getElementById("player-greet").innerHTML = `Hello ${loggedUserName}`
-    document.getElementById("player-score").innerHTML = `Highest Score1: ${loggedUserScore}`
+    document.getElementById("player-score").innerHTML = `Highest Score: ${loggedUserScore}`
   } else {
     document.getElementById("login").style.display = "block"
   }
@@ -117,6 +117,7 @@ const savePlayerScore = async (score) => {
     },
   })
   response = await response.json()
+  console.log(response, 'response')
   if (response.highScore) {
     document.getElementById("player-score").innerHTML = `Highest Score: ${response.highScore}`
     localStorage.setItem('highScore', response.highScore)
