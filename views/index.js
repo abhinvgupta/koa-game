@@ -117,7 +117,6 @@ const savePlayerScore = async (score) => {
     },
   })
   response = await response.json()
-  console.log(response, 'response')
   if (response.highScore) {
     document.getElementById("player-score").innerHTML = `Highest Score: ${response.highScore}`
     localStorage.setItem('highScore', response.highScore)

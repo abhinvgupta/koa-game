@@ -185,7 +185,6 @@ router.post('/updateScore', async (ctx, next) => {
 	const params = getBodyParams(ctx)
 	const {username, score} = params;
 	const response = await updateUserScore(username, score, ctx)
-	console.log(response, 'response')
 	if (response.user) {
 		ctx.body = {highScore: response.user.highScore}
 	} else if (response.error) {

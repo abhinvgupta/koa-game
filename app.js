@@ -41,4 +41,4 @@ app.on('error', err => {
 
 app.use(router.routes()).use(router.allowedMethods())
 
-app.listen(3000, () => console.log('Server started'))
+app.listen(3000, () => console.log('Server started at port 3000'))
