@@ -1,6 +1,6 @@
 # koa-game
 
-This is a avoid obstacles game app built in koajs
+This is an avoid obstacles type game app built in koajs
 
 Start app:
 
